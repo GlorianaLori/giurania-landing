@@ -10,6 +10,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '979201261529581');
 fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {content_name: 'Erboricette', content_type: 'product'});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=979201261529581&ev=PageView&noscript=1"
@@ -1062,7 +1063,7 @@ Non inventare recensioni finte.
           <div class="pi"><span class="check">✓</span><span class="txt">Aggiornamenti futuri inclusi</span></div>
           <div class="pi"><span class="check">✓</span><span class="txt">Accesso da telefono, tablet, computer</span></div>
         </div>
-        <a href="https://erboricette.systeme.io/sales" class="btn btn-gold">Voglio Erboricette · <s style="opacity:0.55;font-weight:500;font-size:0.85em">125€</s> 17€ →</a>
+        <a href="https://erboricette.systeme.io/sales" onclick="fbq('track', 'InitiateCheckout');" class="btn btn-gold">Voglio Erboricette · <s style="opacity:0.55;font-weight:500;font-size:0.85em">125€</s> 17€ →</a>
         <div class="guarantee-box">
           <span class="big">🔒 Pagamento sicuro · Accesso immediato</span>
           Ricevi il codice di accesso via email subito dopo il pagamento. I tuoi diritti sono spiegati nella pagina Diritto di recesso.
