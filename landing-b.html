@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '979201261529581');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {content_name: 'Erboricette_B', content_type: 'product'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=979201261529581&ev=PageView&noscript=1"
+/></noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erboricette · Ricette erboristiche personalizzate · 17€ una tantum</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bordeaux:#7B2D26;--bordeaux-soft:#A85049;--bordeaux-dark:#5A1E18;--bordeaux-deep:#3D1612;
+  --salvia:#8B9D77;--salvia-pale:#D4DFCB;--salvia-dark:#6B7D57;
+  --oro:#C9A961;--oro-pale:#F0E5C8;--oro-dark:#A88B45;--oro-bright:#E5C97A;
+  --crema:#F5F0E8;--crema-warm:#FAF6EE;--crema-dark:#E8DFD0;
+  --marrone:#3A2922;--marrone-soft:#6B5548;
+  --bianco:#FFFEFB;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--marrone);background:var(--crema-warm);line-height:1.6;overflow-x:hidden;font-size:16px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.05;color:var(--marrone);letter-spacing:-0.02em}
+a{color:var(--bordeaux);text-decoration:none}
+.container{max-width:720px;margin:0 auto;padding:0 1.25rem}
+
+/* TOP BAR */
+.top-bar{
+  background:linear-gradient(90deg,var(--bordeaux-deep) 0%,var(--bordeaux) 50%,var(--bordeaux-deep) 100%);
+  color:var(--oro-pale);padding:0.65rem 1rem;text-align:center;
+  font-size:0.82rem;font-weight:600;letter-spacing:0.04em;
+  position:sticky;top:0;z-index:100;
+  border-bottom:1px solid var(--oro-dark);
+  box-shadow:0 2px 12px rgba(58,22,18,0.3);
+}
+.top-bar strong{color:var(--oro-bright)}
+.pulse{display:inline-block;width:7px;height:7px;background:var(--oro-bright);border-radius:50%;margin-right:0.4rem;animation:pulse 1.5s infinite;vertical-align:middle}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.3)}}
+
+/* HERO */
+.hero{
+  background:linear-gradient(160deg,var(--crema-warm) 0%,var(--oro-pale) 100%);
+  padding:3.5rem 0 3rem;
+  border-bottom:1px solid var(--crema-dark);
+}
+.hero-eyebrow{
+  display:inline-block;
+  background:var(--bordeaux);color:var(--oro-bright);
+  font-size:0.72rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;
+  padding:0.4rem 1rem;border-radius:50px;margin-bottom:1.5rem;
+}
+.hero h1{
+  font-size:clamp(2.4rem,7vw,3.8rem);
+  color:var(--bordeaux-deep);
+  margin-bottom:1.2rem;
+  line-height:1.08;
+}
+.hero h1 em{font-style:italic;color:var(--bordeaux)}
+.hero-sub{
+  font-size:1.08rem;color:var(--marrone-soft);
+  line-height:1.7;margin-bottom:2rem;
+  max-width:560px;
+}
+.hero-sub strong{color:var(--marrone);font-weight:700}
+
+/* BUTTON */
+.btn-cta{
+  display:block;width:100%;
+  background:linear-gradient(135deg,var(--bordeaux) 0%,var(--bordeaux-deep) 100%);
+  color:var(--crema-warm);
+  padding:1.2rem 2rem;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:1.05rem;font-weight:800;
+  letter-spacing:0.04em;text-transform:uppercase;
+  border:none;border-radius:14px;cursor:pointer;
+  text-align:center;text-decoration:none;
+  box-shadow:0 10px 28px rgba(123,45,38,0.35);
+  transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(123,45,38,0.5);color:var(--crema-warm)}
+.btn-cta .price-inline{
+  display:block;font-size:0.78rem;font-weight:600;
+  opacity:0.85;margin-top:0.2rem;letter-spacing:0.06em;text-transform:none;
+}
+.btn-ghost{
+  display:block;width:100%;
+  background:transparent;
+  border:2px solid var(--bordeaux);
+  color:var(--bordeaux);
+  padding:1.1rem 2rem;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:1rem;font-weight:700;
+  border-radius:14px;cursor:pointer;
+  text-align:center;text-decoration:none;
+  transition:all 0.3s;
+}
+.btn-ghost:hover{background:var(--bordeaux);color:var(--crema-warm)}
+
+/* MICROCOPY SOTTO CTA */
+.cta-micro{text-align:center;font-size:0.78rem;color:var(--marrone-soft);margin-top:0.7rem}
+.cta-micro strong{color:var(--bordeaux)}
+
+/* SEZIONI */
+section{padding:3rem 0}
+.section-label{
+  font-size:0.72rem;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--oro-dark);margin-bottom:0.8rem;
+}
+.section-title{font-size:clamp(1.9rem,5vw,2.8rem);margin-bottom:1rem;color:var(--bordeaux-deep)}
+.section-title em{font-style:italic;color:var(--bordeaux)}
+.section-sub{color:var(--marrone-soft);font-size:0.97rem;line-height:1.7;margin-bottom:2rem}
+
+/* PROBLEMI */
+.problems{background:var(--bianco);border-radius:20px;overflow:hidden;border:1px solid var(--crema-dark);margin-bottom:2rem}
+.prob-item{
+  display:flex;align-items:flex-start;gap:1rem;
+  padding:1.2rem 1.4rem;
+  border-bottom:1px solid var(--crema-dark);
+}
+.prob-item:last-child{border-bottom:none}
+.prob-x{
+  width:28px;height:28px;flex-shrink:0;
+  background:rgba(123,45,38,0.1);color:var(--bordeaux);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:0.9rem;margin-top:0.1rem;
+}
+.prob-txt{font-size:0.97rem;color:var(--marrone);line-height:1.55;font-weight:500}
+
+/* SOLUZIONI */
+.solutions{display:grid;gap:1rem;margin-bottom:2rem}
+.sol-card{
+  background:var(--bianco);border-radius:16px;
+  padding:1.4rem 1.5rem;
+  border:1px solid var(--crema-dark);
+  display:flex;align-items:flex-start;gap:1rem;
+  transition:border-color 0.3s;
+}
+.sol-card:hover{border-color:var(--oro)}
+.sol-check{
+  width:32px;height:32px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--salvia-dark) 0%,var(--salvia) 100%);
+  color:#fff;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;font-weight:700;margin-top:0.1rem;
+}
+.sol-body h3{font-size:1rem;color:var(--bordeaux-deep);margin-bottom:0.3rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700}
+.sol-body p{font-size:0.9rem;color:var(--marrone-soft);line-height:1.55}
+
+/* RECENSIONI */
+.reviews{display:grid;gap:1rem;margin-bottom:2rem}
+.review-card{
+  background:var(--bianco);border-radius:16px;
+  padding:1.5rem;border:1px solid var(--crema-dark);
+}
+.review-stars{color:var(--oro-dark);font-size:1rem;margin-bottom:0.7rem;letter-spacing:2px}
+.review-text{font-size:0.95rem;color:var(--marrone);line-height:1.7;margin-bottom:0.8rem;font-weight:400}
+.review-name{font-size:0.82rem;font-weight:700;color:var(--bordeaux-soft);text-transform:uppercase;letter-spacing:0.08em}
+
+/* PRICING */
+.pricing-wrap{
+  background:linear-gradient(135deg,var(--bordeaux-deep) 0%,var(--bordeaux) 100%);
+  border-radius:24px;padding:2.5rem 1.8rem;
+  text-align:center;
+  box-shadow:0 30px 60px rgba(58,22,18,0.35);
+}
+.pricing-wrap .label{color:var(--oro-bright);font-size:0.72rem;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.8rem}
+.pricing-wrap h2{color:var(--crema-warm);font-size:clamp(2rem,6vw,3rem);margin-bottom:0.4rem}
+.pricing-wrap h2 em{color:var(--oro-bright);font-style:italic}
+.price-big{margin:1.5rem 0}
+.price-big .num{font-family:'Cormorant Garamond',serif;font-size:5.5rem;color:var(--oro-bright);font-weight:600;line-height:1;letter-spacing:-0.02em}
+.price-big .cur{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--oro-bright);vertical-align:top;margin-left:0.2rem}
+.price-big .once{display:block;font-size:0.85rem;color:rgba(245,240,232,0.75);margin-top:0.4rem;font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1rem}
+.price-features{
+  display:grid;gap:0.6rem;
+  text-align:left;margin:1.5rem 0 2rem;
+  background:rgba(255,254,251,0.08);border-radius:14px;padding:1.2rem 1.4rem;
+}
+.pf{display:flex;align-items:center;gap:0.7rem;font-size:0.93rem;color:var(--crema-warm)}
+.pf .ck{color:var(--oro-bright);font-weight:700;flex-shrink:0}
+.btn-cta-light{
+  display:block;width:100%;
+  background:linear-gradient(135deg,var(--oro-bright) 0%,var(--oro-dark) 100%);
+  color:var(--bordeaux-deep);
+  padding:1.2rem 2rem;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:1.05rem;font-weight:800;
+  letter-spacing:0.04em;text-transform:uppercase;
+  border:none;border-radius:14px;cursor:pointer;
+  text-align:center;text-decoration:none;
+  box-shadow:0 10px 28px rgba(0,0,0,0.25);
+  transition:all 0.3s;
+}
+.btn-cta-light:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(0,0,0,0.35);color:var(--bordeaux-deep)}
+.secure-note{color:rgba(245,240,232,0.7);font-size:0.78rem;margin-top:1rem}
+
+/* DISCLAIMER */
+.disclaimer{
+  background:var(--crema);border-left:3px solid var(--bordeaux-soft);
+  border-radius:0 10px 10px 0;padding:1.2rem 1.4rem;
+  font-size:0.8rem;color:var(--marrone-soft);line-height:1.65;
+}
+.disclaimer strong{color:var(--bordeaux)}
+
+/* FOOTER */
+footer{
+  background:var(--marrone);color:rgba(245,240,232,0.75);
+  padding:2rem 0;font-size:0.78rem;text-align:center;line-height:1.8;
+}
+footer a{color:var(--oro-pale)}
+footer strong{color:var(--oro-pale)}
+
+/* DIVIDER */
+.divider{height:1px;background:var(--crema-dark);margin:0}
+
+/* UTILITY */
+.bg-white{background:var(--bianco)}
+.bg-crema{background:var(--crema-warm)}
+.text-center{text-align:center}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span class="pulse"></span>
+  Accesso immediato dopo il pagamento · <strong>17€ · Una tantum · Per sempre tuo</strong>
+</div>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">🌿 App erboristica italiana</div>
+    <h1>Hai le erbe.<br>Ti manca solo<br><em>la ricetta giusta.</em></h1>
+    <p class="hero-sub">
+      Descrivi cosa hai in casa, le tue preferenze, eventuali intolleranze — Erboricette genera una ricetta erboristica personalizzata per te. <strong>In pochi secondi.</strong>
+    </p>
+    <a href="https://erboricette.systeme.io/sales" class="btn-cta" onclick="fbq('track', 'InitiateCheckout');">
+      Voglio Erboricette adesso →
+      <span class="price-inline">17€ · una tantum · accesso immediato</span>
+    </a>
+    <p class="cta-micro">🔒 Pagamento sicuro · Nessun abbonamento · <strong>Accesso per sempre</strong></p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ====== VIDEO ====== -->
+<section class="bg-crema" style="padding:2.5rem 0">
+  <div class="container">
+    <div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(58,22,18,0.15)">
+      <video
+        src="video.mp4"
+        style="position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover"
+        controls
+        playsinline></video>
+    </div>
+    <div style="text-align:center;margin-top:1.8rem">
+      <a href="https://erboricette.systeme.io/sales" class="btn-cta" onclick="fbq('track', 'InitiateCheckout');" style="max-width:480px;margin:0 auto">
+        Voglio Erboricette adesso →
+        <span class="price-inline">17€ · una tantum · accesso immediato</span>
+      </a>
+      <p class="cta-micro" style="margin-top:0.7rem">🔒 Pagamento sicuro · Nessun abbonamento · <strong>Accesso per sempre</strong></p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ====== PROBLEMI ====== -->
+<section class="bg-white">
+  <div class="container">
+    <div class="section-label">Il problema</div>
+    <h2 class="section-title">Ti <em>riconosci?</em></h2>
+    <div class="problems">
+      <div class="prob-item">
+        <div class="prob-x">×</div>
+        <p class="prob-txt">Hai erbe in casa ma non sai mai esattamente come usarle — ogni sito dice una cosa diversa.</p>
+      </div>
+      <div class="prob-item">
+        <div class="prob-x">×</div>
+        <p class="prob-txt">Cerchi una preparazione specifica e finisci in un labirinto di forum, libri e video contraddittori.</p>
+      </div>
+      <div class="prob-item">
+        <div class="prob-x">×</div>
+        <p class="prob-txt">Le ricette che trovi non tengono conto di quello che hai in casa, delle tue intolleranze, di chi sei.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ====== SOLUZIONI ====== -->
+<section class="bg-crema">
+  <div class="container">
+    <div class="section-label">Come funziona</div>
+    <h2 class="section-title">Una ricetta <em>su misura,</em><br>ogni volta.</h2>
+    <p class="section-sub">Erboricette non è un catalogo di ricette fisse. Le genera al momento, pensate per te.</p>
+    <div class="solutions">
+      <div class="sol-card">
+        <div class="sol-check">✓</div>
+        <div class="sol-body">
+          <h3>Dici cosa vuoi e cosa hai</h3>
+          <p>Inserisci le erbe che hai in dispensa, le tue preferenze, eventuali intolleranze. Erboricette le usa tutte.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-check">✓</div>
+        <div class="sol-body">
+          <h3>Ricevi una ricetta personalizzata</h3>
+          <p>In pochi secondi hai una preparazione erboristica chiara — ingredienti, dosi, metodo. Ogni volta diversa, sempre tua.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-check">✓</div>
+        <div class="sol-body">
+          <h3>Salvi, organizzi, ritrovi</h3>
+          <p>Le ricette che ti piacciono finiscono nel tuo archivio personale. Le rivedi quando vuoi, le organizzi come preferisci.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ====== RECENSIONI ====== -->
+<section class="bg-white">
+  <div class="container">
+    <div class="section-label">Chi l'ha provata</div>
+    <h2 class="section-title">Le voci <em>vere.</em></h2>
+    <div class="reviews">
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"All'inizio non avevo capito quanto fosse potente: pensavo di trovare solo ricette da consultare, invece l'app le crea sul momento. È semplice da usare e mi aiuta quando non so bene cosa preparare. Davvero consigliata."</p>
+        <div class="review-name">Martina</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Uso spesso le erbe in casa e questa app mi ha davvero sorpresa. Inserisco quello di cui ho bisogno e in pochi secondi mi propone una ricetta chiara, con ingredienti e passaggi ben spiegati. Molto pratica anche per chi ha già esperienza."</p>
+        <div class="review-name">Grazia</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Mi ha colpita subito il fatto che l'app non si limiti a mostrare ricette già pronte, ma le genera in base a quello che cerco. È comoda, veloce e mi dà sempre idee nuove da provare. Per me è diventata uno strumento utilissimo."</p>
+        <div class="review-name">Arianna</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ====== PRICING ====== -->
+<section class="bg-crema" id="prezzo">
+  <div class="container">
+    <div class="pricing-wrap">
+      <div class="label">⭐ Accesso completo · Per sempre tuo</div>
+      <h2>Erboricette<br><em>è tua.</em></h2>
+      <div class="price-big">
+        <span class="num">17</span><span class="cur">€</span>
+        <span class="once">una tantum · nessun abbonamento · nessun rinnovo</span>
+      </div>
+      <div class="price-features">
+        <div class="pf"><span class="ck">✓</span> Ricette erboristiche personalizzate</div>
+        <div class="pf"><span class="ck">✓</span> Tiene conto di intolleranze e preferenze</div>
+        <div class="pf"><span class="ck">✓</span> 98 erbe della tradizione italiana</div>
+        <div class="pf"><span class="ck">✓</span> Archivio personale delle tue ricette</div>
+        <div class="pf"><span class="ck">✓</span> Dispensa virtuale — usi quello che hai</div>
+        <div class="pf"><span class="ck">✓</span> Aggiornamenti futuri inclusi</div>
+        <div class="pf"><span class="ck">✓</span> Funziona da telefono, tablet, computer</div>
+      </div>
+      <a href="https://erboricette.systeme.io/sales" class="btn-cta-light" onclick="fbq('track', 'InitiateCheckout');">
+        Accedi adesso · 17€ →
+      </a>
+      <p class="secure-note">🔒 Pagamento sicuro · Accesso immediato via email · Niente abbonamenti</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DISCLAIMER -->
+<section class="bg-crema" style="padding:2rem 0">
+  <div class="container">
+    <div class="disclaimer">
+      <strong>Avvertenza.</strong> Le preparazioni di Erboricette derivano dalla tradizione erboristica italiana e hanno finalità esclusivamente culturali e ricreative. Non costituiscono consulenza medica né sostituiscono il parere del medico o del farmacista. In caso di dubbi, gravidanza, malattie croniche o terapie farmacologiche, consulta sempre il tuo medico.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <strong>Giurania</strong> · Mentana (RM) · P.IVA 17633731009 · <a href="mailto:info@giurania.com">info@giurania.com</a><br>
+    <a href="termini.html">Termini</a> · <a href="privacy.html">Privacy</a> · <a href="cookie.html">Cookie</a> · <a href="recesso.html">Recesso</a><br><br>
+    © 2026 Giurania. Tutti i diritti riservati.
+  </div>
+</footer>
+
+</body>
+</html>
