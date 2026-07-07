@@ -97,6 +97,53 @@ a{color:var(--bordeaux);text-decoration:none}
   text-transform:uppercase;
 }
 .btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(168,139,69,0.6);color:var(--bordeaux-deep)}
+.btn-outline{
+  background:transparent;
+  color:var(--bordeaux);
+  padding:1.3rem 3rem;
+  font-size:1.05rem;
+  border:2px solid var(--bordeaux);
+  text-transform:uppercase;
+}
+.btn-outline:hover{background:rgba(123,45,38,0.08);transform:translateY(-3px);color:var(--bordeaux)}
+
+/* === MODAL TRIAL === */
+.modal-overlay{
+  display:none;position:fixed;inset:0;background:rgba(58,22,18,0.6);
+  z-index:1000;align-items:center;justify-content:center;padding:1.5rem;
+  backdrop-filter:blur(4px);
+}
+.modal-overlay.open{display:flex}
+.modal-box{
+  background:var(--bianco);border-radius:24px;max-width:440px;width:100%;
+  padding:2.5rem 2rem;position:relative;
+  box-shadow:0 30px 70px rgba(58,22,18,0.4),0 0 0 1px var(--oro-pale);
+}
+.modal-close{
+  position:absolute;top:1.2rem;right:1.2rem;background:none;border:none;
+  font-size:1.5rem;color:var(--marrone-soft);cursor:pointer;line-height:1;
+}
+.modal-box h3{font-size:1.7rem;color:var(--bordeaux-deep);margin-bottom:0.6rem}
+.modal-box p{font-size:0.95rem;color:var(--marrone-soft);margin-bottom:1.5rem;line-height:1.5}
+.modal-form label{display:block;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--bordeaux);margin-bottom:0.35rem;margin-top:1rem}
+.modal-form input{
+  width:100%;padding:0.8rem 1rem;border:1.5px solid var(--crema-dark);border-radius:12px;
+  font-family:'Plus Jakarta Sans',sans-serif;font-size:0.95rem;color:var(--marrone);
+  background:var(--crema-warm);
+}
+.modal-form input:focus{outline:none;border-color:var(--oro-dark)}
+.modal-submit{
+  width:100%;margin-top:1.5rem;padding:1.1rem;
+  background:linear-gradient(135deg,var(--oro-bright) 0%,var(--oro-dark) 100%);
+  color:var(--bordeaux-deep);border:none;border-radius:50px;
+  font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:0.04em;
+  cursor:pointer;transition:all 0.3s;
+}
+.modal-submit:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(168,139,69,0.4)}
+.modal-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none}
+.modal-msg{margin-top:1rem;font-size:0.88rem;text-align:center}
+.modal-msg.error{color:var(--bordeaux)}
+.modal-msg.success{color:var(--salvia-dark)}
 
 /* === HERO === */
 .hero{
@@ -639,7 +686,7 @@ footer a:hover{color:var(--oro-bright)}
         </h1>
         <p class="hero-subtitle">Descrivi come stai, cosa hai in casa, cosa preferisci — e Vesta ti prepara una ricetta erboristica personalizzata. Non un catalogo. Una preparazione pensata per te, <strong>adesso</strong>.</p>
         <div class="hero-cta-row">
-          <a href="https://erboricette.systeme.io/sales" onclick="fbq('track', 'InitiateCheckout');" class="btn btn-mega">Voglio Erboricette <span class="arrow">→</span></a>
+          <a href="#" onclick="apriModaleTrial(event)" class="btn btn-mega">Entra gratis in Erboricette <span class="arrow">→</span></a>
         </div>
         <div class="hero-mini-trust">
           
@@ -693,7 +740,7 @@ footer a:hover{color:var(--oro-bright)}
       </div>
     </div>
     <div style="text-align:center;margin-top:2.5rem">
-      <a href="https://erboricette.systeme.io/sales" class="btn btn-mega" onclick="fbq('track', 'InitiateCheckout');">Voglio Erboricette <span class="arrow">→</span></a>
+      <a href="#" onclick="apriModaleTrial(event)" class="btn btn-mega">Entra gratis in Erboricette <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -1051,7 +1098,7 @@ QUANDO IL VIDEO È PRONTO SU YOUTUBE/VIMEO, SOSTITUIRE
           <div class="pi"><span class="check">✓</span><span class="txt">Aggiornamenti futuri inclusi</span></div>
           <div class="pi"><span class="check">✓</span><span class="txt">Accesso da telefono, tablet, computer</span></div>
         </div>
-        <a href="https://erboricette.systeme.io/sales" onclick="fbq('track', 'InitiateCheckout');" class="btn btn-gold">Voglio Erboricette · 17€ →</a>
+        <a href="#" onclick="apriModaleTrial(event)" class="btn btn-gold">Entra gratis in Erboricette →</a>
         <div class="guarantee-box">
           <span class="big">🔒 Pagamento sicuro · Accesso immediato</span>
           Ricevi il codice di accesso via email subito dopo il pagamento. I tuoi diritti sono spiegati nella pagina Diritto di recesso.
@@ -1087,7 +1134,7 @@ QUANDO IL VIDEO È PRONTO SU YOUTUBE/VIMEO, SOSTITUIRE
     <div class="eyebrow" style="color:var(--oro-bright);display:inline-flex">Allora</div>
     <h2>Vieni nel <em>salotto?</em></h2>
     <p class="quote">"Il salotto è apparecchiato. Le erbe sono pronte. La poltrona è la tua. Ti aspetto."</p>
-    <a href="https://erboricette.systeme.io/sales" onclick="fbq('track', 'InitiateCheckout');" class="btn btn-gold">Voglio Erboricette · 17€ →</a>
+    <a href="#" onclick="apriModaleTrial(event)" class="btn btn-gold">Entra gratis in Erboricette →</a>
   </div>
 </section>
 
@@ -1133,12 +1180,87 @@ QUANDO IL VIDEO È PRONTO SU YOUTUBE/VIMEO, SOSTITUIRE
   </div>
 </footer>
 
+<!-- ====== MODAL TRIAL GRATUITO ====== -->
+<div class="modal-overlay" id="modalTrial">
+  <div class="modal-box">
+    <button class="modal-close" onclick="chiudiModaleTrial()">&times;</button>
+    <h3>Prova 3 ricette gratis</h3>
+    <p>Lasciami nome ed email: ti apro subito il salotto, senza carta di credito.</p>
+    <form class="modal-form" id="formTrial" onsubmit="return inviaTrial(event)">
+      <label for="trialNome">Nome</label>
+      <input type="text" id="trialNome" name="nome" required>
+      <label for="trialCognome">Cognome</label>
+      <input type="text" id="trialCognome" name="cognome" required>
+      <label for="trialEmail">Email</label>
+      <input type="email" id="trialEmail" name="email" required>
+      <button type="submit" class="modal-submit" id="btnSubmitTrial">Entra nel salotto gratis →</button>
+      <div class="modal-msg" id="modalMsg"></div>
+    </form>
+  </div>
+</div>
+
 <script>
 function toggleFaq(btn){
   const item=btn.parentElement;
   const wasOpen=item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));
   if(!wasOpen)item.classList.add('open');
+}
+
+function apriModaleTrial(e){
+  e.preventDefault();
+  document.getElementById('modalTrial').classList.add('open');
+  if(typeof fbq!=='undefined'){fbq('track','Lead');}
+}
+function chiudiModaleTrial(){
+  document.getElementById('modalTrial').classList.remove('open');
+}
+document.getElementById('modalTrial').addEventListener('click',function(e){
+  if(e.target===this)chiudiModaleTrial();
+});
+
+async function inviaTrial(e){
+  e.preventDefault();
+  const btn=document.getElementById('btnSubmitTrial');
+  const msg=document.getElementById('modalMsg');
+  const nome=document.getElementById('trialNome').value.trim();
+  const cognome=document.getElementById('trialCognome').value.trim();
+  const email=document.getElementById('trialEmail').value.trim();
+
+  btn.disabled=true;
+  btn.textContent='Un attimo...';
+  msg.textContent='';
+  msg.className='modal-msg';
+
+  try{
+    const res=await fetch('https://erboricette.giurania.com/api/trial-signup',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({nome,cognome,email})
+    });
+    const data=await res.json();
+
+    if(!res.ok){
+      msg.textContent=data.error||'Qualcosa è andato storto, riprova.';
+      msg.className='modal-msg error';
+      btn.disabled=false;
+      btn.textContent='Entra nel salotto gratis →';
+      return false;
+    }
+
+    msg.textContent='Fatto! Ti porto dentro...';
+    msg.className='modal-msg success';
+    setTimeout(function(){
+      window.location.href='https://erboricette.giurania.com/?trial_email='+encodeURIComponent(email);
+    },900);
+
+  }catch(err){
+    msg.textContent='Errore di connessione, riprova tra poco.';
+    msg.className='modal-msg error';
+    btn.disabled=false;
+    btn.textContent='Entra nel salotto gratis →';
+  }
+  return false;
 }
 </script>
 </body>
